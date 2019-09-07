@@ -1,0 +1,31 @@
+{
+  "name": "hapi-tyrdb",
+  "version": "1.0.0",
+  "description": "TyrDB connection plugin for Hapi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alex-Werner/hapi-tyrdb.git"
+  },
+  "homepage": "https://github.com/Alex-Werner/hapi-tyrdb#readme",
+  "author": "Alex Werner <obusco@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/Alex-Werner/hapi-tyrdb/issues"
+  },
+  "engines": {
+    "node": ">= 8"
+  },
+  "keywords": [
+    "hapi",
+    "tyrdb"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@hapi/joi": "^15.1.1",
+    "tyrdb": "^2.0.0"
+  },
+  "devDependencies": {}
+}
