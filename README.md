@@ -24,20 +24,24 @@
     adapter:'FsAdapter'
   };
   await server.register({plugin:require('hapi-tyrdb'), options:dbOpts});
-
+  const colOpts = { uniques :['email']};
   const {db}= server;
-  const col = await db.collection('users');
-  await col.insert({name:'Alex'});
+  const col = await db.collection('users', colOpts);
+  const doc = await col.insert({name:'Alex'});
+  await col.find({name:'Alex'});;
+  await col.remove({name:'Alex'});
 ```
 
 See more into the [TyrDB](https://github.com/Alex-Werner/TyrDB) documentation.
 
-## Options
+#### DB Options
 
   - `adapter` Adapter - (def: MemoryAdapter()) : Allow to specific another adapter to use
-  - `order` Number - (def: 511) : Primordial for the performance, the closest to L1 the better. Chose below 2^n. 
-  - `uniques` Array - (def: []) - Allow to set some field unique by adding them to this array
-  - `exclude` Array - (def: []) - Allow to exclude from indexing some field (important if you expect field value to be huge or nested).
   - `autoInitialize` Adapter - (def: true) : If true, will auto init the db
   - `autoConnect` Adapter - (def: true) : If true, will auto connect the db
   - `path` Adapter - (def: '.db') : Desired relative path to persist the data
+
+#### Col Options
+  - `order` Number - (def: 511) : Primordial for the performance, the closest to L1 the better. Chose below 2^n. 
+  - `uniques` Array - (def: []) - Allow to set some field unique by adding them to this array
+  - `exclude` Array - (def: []) - Allow to exclude from indexing some field (important if you expect field value to be huge or nested).
