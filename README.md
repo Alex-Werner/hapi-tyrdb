@@ -28,11 +28,15 @@
   const {db}= server;
   const col = await db.collection('users', colOpts);
   const doc = await col.insert({name:'Alex'});
-  await col.find({name:'Alex'});;
-  await col.remove({name:'Alex'});
+  const [alex] = await col.find({name:'Alex'});
+  alex.name='Jean';
+  await col.replace(alex);
+  await col.get(alex._id);
+  await col.remove({name:'Jean'});
 ```
 
 See more into the [TyrDB](https://github.com/Alex-Werner/TyrDB) documentation.
+You might also want to look into the Tree Engine of TyrDB: [SBTree](https://github.com/Alex-Werner/SBTree) documentation.
 
 #### DB Options
 

@@ -1,6 +1,6 @@
 {
   "name": "hapi-tyrdb",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "TyrDB connection plugin for Hapi",
   "main": "index.js",
   "scripts": {
@@ -25,7 +25,7 @@
   "license": "MIT",
   "dependencies": {
     "@hapi/joi": "^15.1.1",
-    "tyrdb": "^2.1.0"
+    "tyrdb": "^2.2.1"
   },
   "devDependencies": {}
 }
