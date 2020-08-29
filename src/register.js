@@ -26,7 +26,7 @@ async function register(server, options) {
   const adapter = new Adapter()
 
   return new Promise(((resolve, reject) => {
-    const tyrdb = new TyrDB(Object.assign({}, adapter, validatedOptions));
+    const tyrdb = new TyrDB(Object.assign({adapter}, validatedOptions));
     server.expose({ tyrdb });
     server.decorate('server', 'tyrdb', tyrdb);
     tyrdb.on('ready', async ()=>{

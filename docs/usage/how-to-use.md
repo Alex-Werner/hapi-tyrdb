@@ -1,23 +1,4 @@
-# Hapi-TyrDB
-
-[![NPM Version](https://img.shields.io/npm/v/hapi-tyrdb.svg?&style=flat-square)](https://www.npmjs.org/package/hapi-tyrdb)
-[![Build Status](https://img.shields.io/github/workflow/status/alex-werner/hapi-tyrdb/Node.js%20CI)](https://github.com/Alex-Werner/hapi-tyrdb/actions)
-[![Release Date](https://img.shields.io/github/release-date/alex-werner/hapi-tyrdb)](https://github.com/alex-werner/hapi-tyrdb/releases/latest)
-[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen)](https://github.com/RichardLitt/standard-readme)
-
-> TyrDB connection plugin for Hapi
-
-
-### Table of Contents
- - [Installation](#installation)
- - [Usage](#usage)
- - [Options](#options)
- 
-## Installation 
-
-`npm install hapi-tyrdb`
-
-## Usage
+## How to use
 
 ```js
  const dbOpts = {
