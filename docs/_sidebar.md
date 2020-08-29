@@ -1,3 +1,3 @@
 - Usage
-    - [How To Use](/docs/usage/how-to-use.md) 
+    - [How To Use](/usage/how-to-use.md) 
 - [License](#license)
