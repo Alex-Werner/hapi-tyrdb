@@ -26,7 +26,7 @@
   "license": "MIT",
   "dependencies": {
     "@hapi/joi": "^17.1.1",
-    "tyrdb": "^3.0.0"
+    "tyrdb": "^3.1.1"
   },
   "devDependencies": {}
 }
